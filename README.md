@@ -7,3 +7,8 @@ pip install customtkinter
 
 Inheritance Phyton
 https://www.geeksforgeeks.org/python/inheritance-in-python/
+
+Decision scheme for file use
+![alt text](xVhm8.png)
+
+![alt text](image.png)
