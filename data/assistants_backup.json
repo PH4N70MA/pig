@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Marcu Radu",
+    "id": "A00002",
+    "department": "Finance",
+    "salary": "3300"
+  },
+  {
+    "name": "Dumitru Ana",
+    "id": "A00003",
+    "department": "Human Resources",
+    "salary": "3400"
+  },
+  {
+    "name": "Petcu Vlad",
+    "id": "A00004",
+    "department": "Engineering",
+    "salary": "3500"
+  },
+  {
+    "name": "Simion Elena",
+    "id": "A00005",
+    "department": "Marketing",
+    "salary": "3200"
+  },
+  {
+    "name": "Costache Paul",
+    "id": "A00006",
+    "department": "Finance",
+    "salary": "3100"
+  },
+  {
+    "name": "Voicu Maria",
+    "id": "A00007",
+    "department": "Human Resources",
+    "salary": "3400"
+  },
+  {
+    "name": "Dragan Andrei",
+    "id": "A00008",
+    "department": "Engineering",
+    "salary": "3300"
+  },
+  {
+    "name": "Filipescu Ioana",
+    "id": "A00009",
+    "department": "Marketing",
+    "salary": "3200"
+  },
+  {
+    "name": "Preda Mihai",
+    "id": "A00010",
+    "department": "Finance",
+    "salary": "3500"
+  },
+  {
+    "name": "Zamfir Cristina",
+    "id": "A00011",
+    "department": "Human Resources",
+    "salary": "3400"
+  }
+]

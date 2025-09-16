@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Emma Wilson",
+    "id": "S48291",
+    "grade": "A",
+    "speciality": "Computer Science"
+  },
+  {
+    "name": "David Lee",
+    "id": "S30574",
+    "grade": "B",
+    "speciality": "Mathematics"
+  },
+  {
+    "name": "Lisa Chen",
+    "id": "S91736",
+    "grade": "A",
+    "speciality": "Physics"
+  },
+  {
+    "name": "Vasile Ion",
+    "id": "S00002",
+    "grade": "3",
+    "speciality": "Computer Science"
+  },
+  {
+    "name": "Ciobanu Elena",
+    "id": "S00003",
+    "grade": "1",
+    "speciality": "Mathematics"
+  },
+  {
+    "name": "Popa Andrei",
+    "id": "S00004",
+    "grade": "2",
+    "speciality": "Physics"
+  },
+  {
+    "name": "Rusnac Maria",
+    "id": "S00005",
+    "grade": "4",
+    "speciality": "Engineering"
+  },
+  {
+    "name": "Grigore Vlad",
+    "id": "S00006",
+    "grade": "3",
+    "speciality": "Computer Science"
+  },
+  {
+    "name": "Sandu Ana",
+    "id": "S00007",
+    "grade": "1",
+    "speciality": "Mathematics"
+  },
+  {
+    "name": "Matei Paul",
+    "id": "S00008",
+    "grade": "2",
+    "speciality": "Physics"
+  },
+  {
+    "name": "Ilie Cristina",
+    "id": "S00009",
+    "grade": "4",
+    "speciality": "Engineering"
+  },
+  {
+    "name": "Neagu Mihai",
+    "id": "S00010",
+    "grade": "3",
+    "speciality": "Computer Science"
+  },
+  {
+    "name": "Stoica Laura",
+    "id": "S00011",
+    "grade": "1",
+    "speciality": "Mathematics"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Popescu Maria",
+    "id": "T00002",
+    "salary": 26000,
+    "department": "Human Resources",
+    "subject": "Mathematics"
+  },
+  {
+    "name": "Ivanov Sergiu",
+    "id": "T00003",
+    "salary": 25000,
+    "department": "Finance",
+    "subject": "Physics"
+  },
+  {
+    "name": "Moraru Elena",
+    "id": "T00004",
+    "salary": 24500,
+    "department": "Marketing",
+    "subject": "Biology"
+  },
+  {
+    "name": "Vasiliu Adrian",
+    "id": "T00005",
+    "salary": 25500,
+    "department": "Engineering",
+    "subject": "Chemistry"
+  },
+  {
+    "name": "Petrescu Ioana",
+    "id": "T00006",
+    "salary": 26500,
+    "department": "Finance",
+    "subject": "Mathematics"
+  },
+  {
+    "name": "Barbu Mihai",
+    "id": "T00007",
+    "salary": 27000,
+    "department": "Human Resources",
+    "subject": "Physics"
+  },
+  {
+    "name": "Stanescu Ana",
+    "id": "T00008",
+    "salary": 25000,
+    "department": "Marketing",
+    "subject": "Chemistry"
+  },
+  {
+    "name": "Georgescu Vlad",
+    "id": "T00009",
+    "salary": 26000,
+    "department": "Engineering",
+    "subject": "Biology"
+  },
+  {
+    "name": "Marin Cristina",
+    "id": "T00010",
+    "salary": 25500,
+    "department": "Finance",
+    "subject": "Mathematics"
+  },
+  {
+    "name": "Enache Paul",
+    "id": "T00011",
+    "salary": 24000,
+    "department": "Human Resources",
+    "subject": "Physics"
+  }
+]
