@@ -1,26 +1,33 @@
-code_zone                             
-├─ data                               
-│  ├─ assistant.json                  
-│  ├─ assistants_backup.json          
-│  ├─ students.json                   
-│  ├─ students_backup.json            
-│  ├─ teacher.json                    
-│  └─ teachers_backup.json            
-├─ model                              
-│  ├─ caracteristica.py               
-│  ├─ data.py                         
-│  └─ humans.py                       
-├─ presenter                          
-├─ view                               
-├─ __pycache__                        
-│  ├─ assistant.cpython-313.pyc       
-│  ├─ caracteristica.cpython-313.pyc  
-│  ├─ json_use.cpython-313.pyc        
-│  ├─ lab.cpython-313.pyc             
-│  ├─ person.cpython-313.pyc          
-│  ├─ student.cpython-313.pyc         
-│  └─ teacher.cpython-313.pyc         
-├─ lab.py                             
-├─ README.md                          
-└─ SPEC.md                            
-d
+code_zone                                
+├─ __data__                              
+│  ├─ assistant.json                     
+│  ├─ assistants_backup.json             
+│  ├─ students.json                      
+│  ├─ students_backup.json               
+│  ├─ teacher.json                       
+│  └─ teachers_backup.json               
+├─ __model__                             
+│  ├─ __pycache__                        
+│  │  ├─ caracteristica.cpython-313.pyc  
+│  │  ├─ data.cpython-313.pyc            
+│  │  ├─ humans.cpython-313.pyc          
+│  │  └─ master.cpython-313.pyc          
+│  ├─ caracteristica.py                  
+│  ├─ data.py                            
+│  ├─ humans.py                          
+│  └─ master.py                          
+├─ __presenter__                         
+│  ├─ __pycache__                        
+│  │  ├─ data_presenter.cpython-313.pyc  
+│  │  └─ __init__.cpython-313.pyc        
+│  └─ data_presenter.py                  
+├─ __view__                              
+│  ├─ __pycache__                        
+│  │  ├─ main_app.cpython-313.pyc        
+│  │  ├─ tab_views.cpython-313.pyc       
+│  │  └─ __init__.cpython-313.pyc        
+│  ├─ main_app.py                        
+│  └─ tab_views.py                       
+├─ README.md                             
+├─ SPEC.md                               
+└─ __main__.py                           

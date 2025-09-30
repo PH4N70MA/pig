@@ -1,4 +1,4 @@
-from model.master import Person
+from __model__.master import Person
 
 class Speciality:
     ALLOWED_SPECIALTIES = ["Computer Science", "Mathematics", "Physics", "Engineering"]
