@@ -1,4 +1,4 @@
-from person.person import Person
+from humans import Person
 
 class Speciality:
     ALLOWED_SPECIALTIES = ["Computer Science", "Mathematics", "Physics", "Engineering"]
