@@ -14,7 +14,7 @@ def save_json_students(students):
             'grade': student.grade,
             'speciality': student.speciality
         })
-    with open('data/student.json', 'w') as file:
+    with open('data/students.json', 'w') as file:
         json.dump(data, file, indent=2)
 
 def save_json_teachers(teachers):

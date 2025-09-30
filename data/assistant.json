@@ -58,5 +58,11 @@
     "id": "A00011",
     "department": "Human Resources",
     "salary": "3400"
+  },
+  {
+    "name": "Chin Chin",
+    "id": "AST303",
+    "department": "Human Resources",
+    "salary": "11111"
   }
 ]

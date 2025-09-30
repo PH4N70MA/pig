@@ -68,5 +68,12 @@
     "salary": 24000,
     "department": "Human Resources",
     "subject": "Physics"
+  },
+  {
+    "name": "Jon Doe",
+    "id": "TCH273",
+    "salary": "222222",
+    "department": "Finance",
+    "subject": "Mathematics"
   }
 ]
