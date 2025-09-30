@@ -82,5 +82,323 @@
     "id": "STU2988",
     "grade": "2",
     "speciality": "Physics"
+  },
+  {
+    "name": "Alexandru Popescu",
+    "id": "S00012",
+    "grade": "2",
+    "speciality": "Engineering"
+  },
+  {
+    "name": "Maria Ionescu",
+    "id": "S00013",
+    "grade": "3",
+    "speciality": "Computer Science"
+  },
+  {
+    "name": "George Vasilescu",
+    "id": "S00014",
+    "grade": "1",
+    "speciality": "Mathematics"
+  },
+  {
+    "name": "Elena Dumitru",
+    "id": "S00015",
+    "grade": "4",
+    "speciality": "Physics"
+  },
+  {
+    "name": "Andrei Petrescu",
+    "id": "S00016",
+    "grade": "2",
+    "speciality": "Engineering"
+  },
+  {
+    "name": "Cristina Marin",
+    "id": "S00017",
+    "grade": "3",
+    "speciality": "Computer Science"
+  },
+  {
+    "name": "Vlad Georgescu",
+    "id": "S00018",
+    "grade": "1",
+    "speciality": "Mathematics"
+  },
+  {
+    "name": "Ana Stan",
+    "id": "S00019",
+    "grade": "4",
+    "speciality": "Physics"
+  },
+  {
+    "name": "Paul Radu",
+    "id": "S00020",
+    "grade": "2",
+    "speciality": "Engineering"
+  },
+  {
+    "name": "Ioana Pavel",
+    "id": "S00021",
+    "grade": "3",
+    "speciality": "Computer Science"
+  },
+  {
+    "name": "Mihai Tudor",
+    "id": "S00022",
+    "grade": "1",
+    "speciality": "Mathematics"
+  },
+  {
+    "name": "Gabriela Dobre",
+    "id": "S00023",
+    "grade": "4",
+    "speciality": "Physics"
+  },
+  {
+    "name": "Roxana Iliescu",
+    "id": "S00024",
+    "grade": "2",
+    "speciality": "Engineering"
+  },
+  {
+    "name": "Florin Barbu",
+    "id": "S00025",
+    "grade": "3",
+    "speciality": "Computer Science"
+  },
+  {
+    "name": "Diana Ene",
+    "id": "S00026",
+    "grade": "1",
+    "speciality": "Mathematics"
+  },
+  {
+    "name": "Ciprian Oprea",
+    "id": "S00027",
+    "grade": "4",
+    "speciality": "Physics"
+  },
+  {
+    "name": "Simona Dragomir",
+    "id": "S00028",
+    "grade": "2",
+    "speciality": "Engineering"
+  },
+  {
+    "name": "Adrian Voicu",
+    "id": "S00029",
+    "grade": "3",
+    "speciality": "Computer Science"
+  },
+  {
+    "name": "Teodora Munteanu",
+    "id": "S00030",
+    "grade": "1",
+    "speciality": "Mathematics"
+  },
+  {
+    "name": "Radu Stoian",
+    "id": "S00031",
+    "grade": "4",
+    "speciality": "Physics"
+  },
+  {
+    "name": "Larisa Nistor",
+    "id": "S00032",
+    "grade": "2",
+    "speciality": "Engineering"
+  },
+  {
+    "name": "Cosmin Preda",
+    "id": "S00033",
+    "grade": "3",
+    "speciality": "Computer Science"
+  },
+  {
+    "name": "Bianca Sima",
+    "id": "S00034",
+    "grade": "1",
+    "speciality": "Mathematics"
+  },
+  {
+    "name": "Marius Roman",
+    "id": "S00035",
+    "grade": "4",
+    "speciality": "Physics"
+  },
+  {
+    "name": "Alina Zamfir",
+    "id": "S00036",
+    "grade": "2",
+    "speciality": "Engineering"
+  },
+  {
+    "name": "Sorin Balan",
+    "id": "S00037",
+    "grade": "3",
+    "speciality": "Computer Science"
+  },
+  {
+    "name": "Irina Costache",
+    "id": "S00038",
+    "grade": "1",
+    "speciality": "Mathematics"
+  },
+  {
+    "name": "Dan Gherman",
+    "id": "S00039",
+    "grade": "4",
+    "speciality": "Physics"
+  },
+  {
+    "name": "Monica Lupu",
+    "id": "S00040",
+    "grade": "2",
+    "speciality": "Engineering"
+  },
+  {
+    "name": "Valentin Cazacu",
+    "id": "S00041",
+    "grade": "3",
+    "speciality": "Computer Science"
+  },
+  {
+    "name": "Oana Filip",
+    "id": "S00042",
+    "grade": "1",
+    "speciality": "Mathematics"
+  },
+  {
+    "name": "Cristian Neacsu",
+    "id": "S00043",
+    "grade": "4",
+    "speciality": "Physics"
+  },
+  {
+    "name": "Anca Toma",
+    "id": "S00044",
+    "grade": "2",
+    "speciality": "Engineering"
+  },
+  {
+    "name": "Stefan Dinu",
+    "id": "S00045",
+    "grade": "3",
+    "speciality": "Computer Science"
+  },
+  {
+    "name": "Camelia Rusu",
+    "id": "S00046",
+    "grade": "1",
+    "speciality": "Mathematics"
+  },
+  {
+    "name": "Ionut Serban",
+    "id": "S00047",
+    "grade": "4",
+    "speciality": "Physics"
+  },
+  {
+    "name": "Raluca Ene",
+    "id": "S00048",
+    "grade": "2",
+    "speciality": "Engineering"
+  },
+  {
+    "name": "Mihnea Pavel",
+    "id": "S00049",
+    "grade": "3",
+    "speciality": "Computer Science"
+  },
+  {
+    "name": "Sorina Vlad",
+    "id": "S00050",
+    "grade": "1",
+    "speciality": "Mathematics"
+  },
+  {
+    "name": "Victor Marin",
+    "id": "S00051",
+    "grade": "4",
+    "speciality": "Physics"
+  },
+  {
+    "name": "Daria Pop",
+    "id": "S00052",
+    "grade": "2",
+    "speciality": "Engineering"
+  },
+  {
+    "name": "Tudor Ilie",
+    "id": "S00053",
+    "grade": "3",
+    "speciality": "Computer Science"
+  },
+  {
+    "name": "Eliza Petcu",
+    "id": "S00054",
+    "grade": "1",
+    "speciality": "Mathematics"
+  },
+  {
+    "name": "Bogdan Stan",
+    "id": "S00055",
+    "grade": "4",
+    "speciality": "Physics"
+  },
+  {
+    "name": "Madalina Florescu",
+    "id": "S00056",
+    "grade": "2",
+    "speciality": "Engineering"
+  },
+  {
+    "name": "Cristian Luca",
+    "id": "S00057",
+    "grade": "3",
+    "speciality": "Computer Science"
+  },
+  {
+    "name": "Simona Petrescu",
+    "id": "S00058",
+    "grade": "1",
+    "speciality": "Mathematics"
+  },
+  {
+    "name": "Gabriel Nita",
+    "id": "S00059",
+    "grade": "4",
+    "speciality": "Physics"
+  },
+  {
+    "name": "Andreea Voinea",
+    "id": "S00060",
+    "grade": "2",
+    "speciality": "Engineering"
+  },
+  {
+    "name": "Rares Dumitrescu",
+    "id": "S00061",
+    "grade": "3",
+    "speciality": "Computer Science"
+  },
+  {
+    "name": "Lavinia Muresan",
+    "id": "S00062",
+    "grade": "1",
+    "speciality": "Mathematics"
+  },
+  {
+    "name": "Mihail Popa",
+    "id": "S00063",
+    "grade": "4",
+    "speciality": "Physics"
+  },
+  {
+    "name": "Ovidiu Enache",
+    "id": "S00064",
+    "grade": "2",
+    "speciality": "Engineering"
   }
 ]

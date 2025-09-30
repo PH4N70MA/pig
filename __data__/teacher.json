@@ -75,5 +75,355 @@
     "salary": "222222",
     "department": "Finance",
     "subject": "Mathematics"
+  },
+  {
+    "name": "Ionescu Radu",
+    "id": "T00012",
+    "salary": 25000,
+    "department": "Engineering",
+    "subject": "Mathematics"
+  },
+  {
+    "name": "Dumitrescu Alina",
+    "id": "T00013",
+    "salary": 24500,
+    "department": "Marketing",
+    "subject": "Physics"
+  },
+  {
+    "name": "Popa George",
+    "id": "T00014",
+    "salary": 25500,
+    "department": "Finance",
+    "subject": "Biology"
+  },
+  {
+    "name": "Rusu Camelia",
+    "id": "T00015",
+    "salary": 26500,
+    "department": "Human Resources",
+    "subject": "Chemistry"
+  },
+  {
+    "name": "Mihailescu Vlad",
+    "id": "T00016",
+    "salary": 27000,
+    "department": "Engineering",
+    "subject": "Mathematics"
+  },
+  {
+    "name": "Dobre Andreea",
+    "id": "T00017",
+    "salary": 25000,
+    "department": "Marketing",
+    "subject": "Physics"
+  },
+  {
+    "name": "Tudorache Paul",
+    "id": "T00018",
+    "salary": 26000,
+    "department": "Finance",
+    "subject": "Biology"
+  },
+  {
+    "name": "Iliescu Sorin",
+    "id": "T00019",
+    "salary": 25500,
+    "department": "Human Resources",
+    "subject": "Chemistry"
+  },
+  {
+    "name": "Matei Roxana",
+    "id": "T00020",
+    "salary": 24000,
+    "department": "Engineering",
+    "subject": "Mathematics"
+  },
+  {
+    "name": "Voicu Adrian",
+    "id": "T00021",
+    "salary": 25000,
+    "department": "Marketing",
+    "subject": "Physics"
+  },
+  {
+    "name": "Lazar Cristina",
+    "id": "T00022",
+    "salary": 24500,
+    "department": "Finance",
+    "subject": "Biology"
+  },
+  {
+    "name": "Baciu Mihai",
+    "id": "T00023",
+    "salary": 25500,
+    "department": "Human Resources",
+    "subject": "Chemistry"
+  },
+  {
+    "name": "Neagu Elena",
+    "id": "T00024",
+    "salary": 26500,
+    "department": "Engineering",
+    "subject": "Mathematics"
+  },
+  {
+    "name": "Ciobanu Florin",
+    "id": "T00025",
+    "salary": 27000,
+    "department": "Marketing",
+    "subject": "Physics"
+  },
+  {
+    "name": "Marinescu Ana",
+    "id": "T00026",
+    "salary": 25000,
+    "department": "Finance",
+    "subject": "Biology"
+  },
+  {
+    "name": "Sandu Paul",
+    "id": "T00027",
+    "salary": 26000,
+    "department": "Human Resources",
+    "subject": "Chemistry"
+  },
+  {
+    "name": "Toma Ioana",
+    "id": "T00028",
+    "salary": 25500,
+    "department": "Engineering",
+    "subject": "Mathematics"
+  },
+  {
+    "name": "Nistor Vlad",
+    "id": "T00029",
+    "salary": 24000,
+    "department": "Marketing",
+    "subject": "Physics"
+  },
+  {
+    "name": "Dragan Camelia",
+    "id": "T00030",
+    "salary": 25000,
+    "department": "Finance",
+    "subject": "Biology"
+  },
+  {
+    "name": "Balan George",
+    "id": "T00031",
+    "salary": 24500,
+    "department": "Human Resources",
+    "subject": "Chemistry"
+  },
+  {
+    "name": "Petcu Roxana",
+    "id": "T00032",
+    "salary": 25500,
+    "department": "Engineering",
+    "subject": "Mathematics"
+  },
+  {
+    "name": "Dinu Adrian",
+    "id": "T00033",
+    "salary": 26500,
+    "department": "Marketing",
+    "subject": "Physics"
+  },
+  {
+    "name": "Munteanu Cristina",
+    "id": "T00034",
+    "salary": 27000,
+    "department": "Finance",
+    "subject": "Biology"
+  },
+  {
+    "name": "Costache Mihai",
+    "id": "T00035",
+    "salary": 25000,
+    "department": "Human Resources",
+    "subject": "Chemistry"
+  },
+  {
+    "name": "Pavel Andreea",
+    "id": "T00036",
+    "salary": 26000,
+    "department": "Engineering",
+    "subject": "Mathematics"
+  },
+  {
+    "name": "Badea Paul",
+    "id": "T00037",
+    "salary": 25500,
+    "department": "Marketing",
+    "subject": "Physics"
+  },
+  {
+    "name": "Grigore Elena",
+    "id": "T00038",
+    "salary": 24000,
+    "department": "Finance",
+    "subject": "Biology"
+  },
+  {
+    "name": "Voinea Sorin",
+    "id": "T00039",
+    "salary": 25000,
+    "department": "Human Resources",
+    "subject": "Chemistry"
+  },
+  {
+    "name": "Preda Roxana",
+    "id": "T00040",
+    "salary": 24500,
+    "department": "Engineering",
+    "subject": "Mathematics"
+  },
+  {
+    "name": "Sima Adrian",
+    "id": "T00041",
+    "salary": 25500,
+    "department": "Marketing",
+    "subject": "Physics"
+  },
+  {
+    "name": "Roman Cristina",
+    "id": "T00042",
+    "salary": 26500,
+    "department": "Finance",
+    "subject": "Biology"
+  },
+  {
+    "name": "Cojocaru Mihai",
+    "id": "T00043",
+    "salary": 27000,
+    "department": "Human Resources",
+    "subject": "Chemistry"
+  },
+  {
+    "name": "Moldovan Andreea",
+    "id": "T00044",
+    "salary": 25000,
+    "department": "Engineering",
+    "subject": "Mathematics"
+  },
+  {
+    "name": "Filip Paul",
+    "id": "T00045",
+    "salary": 26000,
+    "department": "Marketing",
+    "subject": "Physics"
+  },
+  {
+    "name": "Danciu Elena",
+    "id": "T00046",
+    "salary": 25500,
+    "department": "Finance",
+    "subject": "Biology"
+  },
+  {
+    "name": "Botezatu George",
+    "id": "T00047",
+    "salary": 24000,
+    "department": "Human Resources",
+    "subject": "Chemistry"
+  },
+  {
+    "name": "Morar Roxana",
+    "id": "T00048",
+    "salary": 25000,
+    "department": "Engineering",
+    "subject": "Mathematics"
+  },
+  {
+    "name": "Zamfir Adrian",
+    "id": "T00049",
+    "salary": 24500,
+    "department": "Marketing",
+    "subject": "Physics"
+  },
+  {
+    "name": "Bacalu Cristina",
+    "id": "T00050",
+    "salary": 25500,
+    "department": "Finance",
+    "subject": "Biology"
+  },
+  {
+    "name": "Lupu Mihai",
+    "id": "T00051",
+    "salary": 26500,
+    "department": "Human Resources",
+    "subject": "Chemistry"
+  },
+  {
+    "name": "Mihai Andreea",
+    "id": "T00052",
+    "salary": 27000,
+    "department": "Engineering",
+    "subject": "Mathematics"
+  },
+  {
+    "name": "Dinu Paul",
+    "id": "T00053",
+    "salary": 25000,
+    "department": "Marketing",
+    "subject": "Physics"
+  },
+  {
+    "name": "Radu Elena",
+    "id": "T00054",
+    "salary": 26000,
+    "department": "Finance",
+    "subject": "Biology"
+  },
+  {
+    "name": "Popescu George",
+    "id": "T00055",
+    "salary": 25500,
+    "department": "Human Resources",
+    "subject": "Chemistry"
+  },
+  {
+    "name": "Stan Roxana",
+    "id": "T00056",
+    "salary": 24000,
+    "department": "Engineering",
+    "subject": "Mathematics"
+  },
+  {
+    "name": "Iacob Adrian",
+    "id": "T00057",
+    "salary": 25000,
+    "department": "Marketing",
+    "subject": "Physics"
+  },
+  {
+    "name": "Muntean Cristina",
+    "id": "T00058",
+    "salary": 24500,
+    "department": "Finance",
+    "subject": "Biology"
+  },
+  {
+    "name": "Dobre Mihai",
+    "id": "T00059",
+    "salary": 25500,
+    "department": "Human Resources",
+    "subject": "Chemistry"
+  },
+  {
+    "name": "Petrescu Andreea",
+    "id": "T00060",
+    "salary": 26500,
+    "department": "Engineering",
+    "subject": "Mathematics"
+  },
+  {
+    "name": "Barbu Paul",
+    "id": "T00061",
+    "salary": 27000,
+    "department": "Marketing",
+    "subject": "Physics"
   }
 ]

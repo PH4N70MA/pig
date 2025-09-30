@@ -13,19 +13,15 @@ class BaseTabView:
         self.refresh_display()
         
     def _build_ui(self):
-        """Build the UI - to be implemented by subclasses"""
         raise NotImplementedError
         
     def refresh_display(self):
-        """Refresh the display - to be implemented by subclasses"""
         raise NotImplementedError
         
     def clear_fields(self):
-        """Clear input fields - to be implemented by subclasses"""
         raise NotImplementedError
         
     def show_message(self, message):
-        """Show message to user"""
         print(message)
 
 
@@ -46,15 +42,19 @@ class StudentTabView(BaseTabView):
         entry_frame.pack(pady=10, fill="x", padx=20)
         
         # Input fields
+        entry_frame.grid_columnconfigure(0, weight=1)
+        entry_frame.grid_columnconfigure(1, weight=1)
+        entry_frame.grid_columnconfigure(2, weight=1)
+
         self.widgets["name"] = customtkinter.CTkEntry(entry_frame, placeholder_text="Name", width=200)
-        self.widgets["name"].grid(row=0, column=0, padx=8, pady=10)
+        self.widgets["name"].grid(row=0, column=0, padx=8, pady=10, sticky="ew")
         
         self.widgets["grade"] = customtkinter.CTkEntry(entry_frame, placeholder_text="Grade", width=100)
-        self.widgets["grade"].grid(row=0, column=1, padx=8, pady=10)
+        self.widgets["grade"].grid(row=0, column=1, padx=8, pady=10, sticky="ew")
         
         self.widgets["speciality"] = customtkinter.CTkComboBox(entry_frame, values=self.presenter.get_specialities(), width=200)
         self.widgets["speciality"].set("Select Speciality")
-        self.widgets["speciality"].grid(row=0, column=2, padx=8, pady=10)
+        self.widgets["speciality"].grid(row=0, column=2, padx=8, pady=10, sticky="ew")
         
         # Action buttons
         btn_frame = customtkinter.CTkFrame(self.tab)
@@ -131,19 +131,24 @@ class TeacherTabView(BaseTabView):
         entry_frame.pack(pady=10, fill="x", padx=20)
         
         # Input fields
+        entry_frame.grid_columnconfigure(0, weight=1)
+        entry_frame.grid_columnconfigure(1, weight=1)
+        entry_frame.grid_columnconfigure(2, weight=1)
+        entry_frame.grid_columnconfigure(3, weight=1)
+
         self.widgets["name"] = customtkinter.CTkEntry(entry_frame, placeholder_text="Name", width=150)
-        self.widgets["name"].grid(row=0, column=0, padx=8, pady=10)
-        
+        self.widgets["name"].grid(row=0, column=0, padx=8, pady=10, sticky="ew")
+
         self.widgets["salary"] = customtkinter.CTkEntry(entry_frame, placeholder_text="Salary", width=120)
-        self.widgets["salary"].grid(row=0, column=1, padx=8, pady=10)
-        
+        self.widgets["salary"].grid(row=0, column=1, padx=8, pady=10, sticky="ew")
+
         self.widgets["department"] = customtkinter.CTkComboBox(entry_frame, values=self.presenter.get_departments(), width=150)
         self.widgets["department"].set("Select Department")
-        self.widgets["department"].grid(row=0, column=2, padx=8, pady=10)
-        
+        self.widgets["department"].grid(row=0, column=2, padx=8, pady=10, sticky="ew")
+
         self.widgets["subject"] = customtkinter.CTkComboBox(entry_frame, values=self.presenter.get_subjects(), width=150)
         self.widgets["subject"].set("Select Subject")
-        self.widgets["subject"].grid(row=0, column=3, padx=8, pady=10)
+        self.widgets["subject"].grid(row=0, column=3, padx=8, pady=10, sticky="ew")
         
         # Action buttons
         btn_frame = customtkinter.CTkFrame(self.tab)
@@ -222,15 +227,19 @@ class AssistantTabView(BaseTabView):
         entry_frame.pack(pady=10, fill="x", padx=20)
         
         # Input fields
+        entry_frame.grid_columnconfigure(0, weight=1)
+        entry_frame.grid_columnconfigure(1, weight=1)
+        entry_frame.grid_columnconfigure(2, weight=1)
+
         self.widgets["name"] = customtkinter.CTkEntry(entry_frame, placeholder_text="Name", width=200)
-        self.widgets["name"].grid(row=0, column=0, padx=8, pady=10)
+        self.widgets["name"].grid(row=0, column=0, padx=8, pady=10, sticky="ew")
         
         self.widgets["salary"] = customtkinter.CTkEntry(entry_frame, placeholder_text="Salary", width=150)
-        self.widgets["salary"].grid(row=0, column=1, padx=8, pady=10)
+        self.widgets["salary"].grid(row=0, column=1, padx=8, pady=10, sticky="ew")
         
         self.widgets["department"] = customtkinter.CTkComboBox(entry_frame, values=self.presenter.get_departments(), width=200)
         self.widgets["department"].set("Select Department")
-        self.widgets["department"].grid(row=0, column=2, padx=8, pady=10)
+        self.widgets["department"].grid(row=0, column=2, padx=8, pady=10, sticky="ew")
         
         # Action buttons
         btn_frame = customtkinter.CTkFrame(self.tab)
