@@ -1,8 +1,7 @@
-from data_read.json_read import read_json_students, read_json_teachers, read_json_assistants
-from data_save.json_save import save_json_students, save_json_teachers, save_json_assistants
-from student.student import Student
-from teacher.teacher import Teacher
-from assistant.assistant import Assistant
+from model.data import read_json_students, read_json_teachers, read_json_assistants
+from model.data import save_json_students, save_json_teachers, save_json_assistants
+from model.humans import Student, Teacher, Assistant
+
 import customtkinter
 import random
 

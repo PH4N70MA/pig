@@ -1,9 +1,6 @@
-from caracteristica import Subject, Employee, Speciality
+from model.caracteristica import Subject, Employee, Speciality
+from model.master import Person
 
-class Person:
-    def __init__(self, name, id):
-        self.name = name
-        self.id = id
 
 class Teacher(Employee, Subject):  # Teacher inherits from Employee
     def __init__(self, name, id, salary, department, subject):

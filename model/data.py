@@ -1,5 +1,5 @@
 import json
-from humans import Student, Teacher, Assistant
+from model.humans import Student, Teacher, Assistant
 
 def save_json_students(students):
     """Save students to JSON file"""
