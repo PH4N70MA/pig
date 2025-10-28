@@ -1,4 +1,4 @@
-from __view__.main_app import main
+from __view__.main_frame import main as FrameBasedAppMain
 
 if __name__ == "__main__":
-    main()
+        FrameBasedAppMain()
