@@ -6,22 +6,16 @@
     "salary": "3300"
   },
   {
-    "name": "Dumitru Ana",
+    "name": "Dumitru Vasile",
     "id": "A00003",
-    "department": "Human Resources",
-    "salary": "3400"
+    "department": "Finance",
+    "salary": "340"
   },
   {
     "name": "Petcu Vlad",
     "id": "A00004",
     "department": "Engineering",
     "salary": "3500"
-  },
-  {
-    "name": "Simion Elena",
-    "id": "A00005",
-    "department": "Marketing",
-    "salary": "3200"
   },
   {
     "name": "Costache Paul",

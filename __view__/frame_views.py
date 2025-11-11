@@ -178,7 +178,104 @@ class BaseFrameTabView:
         print(f"💬 {message}")
     
     def _edit_person(self, person):
-        print(f"✏️ Editing {person.name} (ID: {person.id})")
+        """Populate inputs for editing and turn Add button into Update."""
+        # mark editing target
+        self._editing_person = person
+
+        # Populate fields from person attributes
+        for field in self.config['fields']:
+            widget = self.widgets[field['name']]
+            # try to read attribute from person (field names are expected to match attrs)
+            value = getattr(person, field['name'], "")
+            if field['type'] == 'combobox':
+                widget.set(str(value))
+            else:
+                widget.delete(0, customtkinter.END)
+                widget.insert(0, str(value))
+
+        # locate the "Add ..." button and modify it to perform an update
+        def _find_add_button(widget):
+            # recursive search for a CTkButton whose text starts with "Add "
+            if isinstance(widget, customtkinter.CTkButton):
+                try:
+                    if str(widget.cget("text")).startswith("Add "):
+                        return widget
+                except Exception:
+                    pass
+            for child in widget.winfo_children():
+                found = _find_add_button(child)
+                if found:
+                    return found
+            return None
+
+        add_btn = _find_add_button(self.tab)
+        if add_btn is None:
+            self.show_message("Error: Add button not found; cannot enter edit mode.")
+            return
+
+        orig_text = add_btn.cget("text")
+
+        def do_update():
+            # collect values with same validation as _add_item
+            values = []
+            for field in self.config['fields']:
+                widget = self.widgets[field['name']]
+                if field['type'] == 'combobox':
+                    value = widget.get().strip()
+                    if value.startswith("Select"):
+                        self.show_message(f"Error: Please select a {field['label'].lower()}")
+                        return
+                else:
+                    value = widget.get().strip()
+                    if not value:
+                        self.show_message(f"Error: Please fill the {field['label'].lower()}")
+                        return
+                values.append(value)
+
+            # apply values to the person object (assumes field names match attributes)
+            for field, val in zip(self.config['fields'], values):
+                setattr(person, field['name'], val)
+
+            # finish editing
+            self.clear_fields()
+            add_btn.configure(text=orig_text, command=self._add_item)
+            # remove cancel button if present
+            try:
+                cancel_btn.destroy()
+            except Exception:
+                pass
+
+            self._editing_person = None
+            self.refresh_display()
+            self.presenter.save_data()
+            self.show_message(f"Updated {person.name} (ID: {person.id})")
+
+        # cancel editing helper
+        def cancel_edit():
+            self.clear_fields()
+            add_btn.configure(text=orig_text, command=self._add_item)
+            try:
+                cancel_btn.destroy()
+            except Exception:
+                pass
+            self._editing_person = None
+            self.show_message("Edit cancelled")
+
+        # replace add button behaviour
+        add_btn.configure(text="Update", command=do_update)
+
+        # create a Cancel button next to the Add/Update button to abort edit
+        try:
+            parent = add_btn.master
+            info = add_btn.grid_info()
+            col = int(info.get("column", 0)) + 1
+            cancel_btn = customtkinter.CTkButton(parent, text="Cancel", command=cancel_edit)
+            cancel_btn.grid(row=info.get("row", 0), column=col, padx=10, pady=5)
+        except Exception:
+            # if grid placement fails, fall back to no cancel button
+            cancel_btn = None
+
+        self.show_message(f"Editing {person.name} (ID: {person.id}) - make changes and click Update")
     
     def _delete_person(self, person):
         data = self.presenter.get_data()
