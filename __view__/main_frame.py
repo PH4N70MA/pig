@@ -2,6 +2,8 @@ import customtkinter
 
 from __presenter__.data_presenter import StudentPresenter, TeacherPresenter, AssistantPresenter
 from __view__.frame_views import StudentFrameTabView, TeacherFrameTabView, AssistantFrameTabView
+from __presenter__.plot_presenter import PlotPresenter
+from __view__.plot_frame import PlotFrame
 
 
 class DataManagerApp(customtkinter.CTk):
@@ -16,6 +18,7 @@ class DataManagerApp(customtkinter.CTk):
             {"name": "👨‍🎓 Students", "presenter": StudentPresenter, "view": StudentFrameTabView},
             {"name": "👨‍🏫 Teachers", "presenter": TeacherPresenter, "view": TeacherFrameTabView},
             {"name": "👨‍💼 Assistants", "presenter": AssistantPresenter, "view": AssistantFrameTabView},
+            {"name": "📊 Charts", "presenter": PlotPresenter, "view": PlotFrame},
         ]
         
         self._create_ui()
