@@ -21,6 +21,13 @@ class DataPresenter:
         raise NotImplementedError
         
     def delete_last_item(self):
+        with DBController(host, user, password, db_name, port) as db:
+            if isinstance(self.data[0] if self.data else None, Student):
+                db.deleteStudent(deleted_item.id)
+            elif isinstance(self.data[0] if self.data else None, Teacher):
+                db.deleteTeacher(deleted_item.id)
+            elif isinstance(self.data[0] if self.data else None, Assistant):
+                db.deleteAssistant(deleted_item.id)
         if self.data:
             deleted_item = self.data.pop()
             if self.view:

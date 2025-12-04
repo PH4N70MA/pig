@@ -254,6 +254,30 @@ class DBController:
             """)
             rows = cursor.fetchall()
             return [(row[0], row[1]) for row in rows]
+    
+    def deleteStudent(self, id_):
+        if not self.connection:
+            self.connect()
+        with self.connection.cursor() as cursor:
+            cursor.execute("DELETE FROM students WHERE id = %s;", (id_,))
+            self.connection.commit()
+            return True
+    
+    def deleteTeacher(self, id_):
+        if not self.connection:
+            self.connect()
+        with self.connection.cursor() as cursor:
+            cursor.execute("DELETE FROM teachers WHERE id = %s;", (id_,))
+            self.connection.commit()
+            return True
+        
+    def deleteAssistant(self, id_):
+        if not self.connection:
+            self.connect()
+        with self.connection.cursor() as cursor:
+            cursor.execute("DELETE FROM assistants WHERE id = %s;", (id_,))
+            self.connection.commit()
+            return True
 
 
 if __name__ == "__main__":

@@ -2,6 +2,9 @@
 import customtkinter
 from PIL import Image
 
+from __model__.db.db_control import DBController
+from config import host, user, password, db_name, port
+
 class BaseFrameTabView:
 
     def __init__(self, parent_tab, presenter):
@@ -279,6 +282,14 @@ class BaseFrameTabView:
     
     def _delete_person(self, person):
         data = self.presenter.get_data()
+        """Delete the specified person"""
+        with DBController(host, user, password, db_name, port) as db:
+            if (person.__class__.__name__ == 'Student'):
+                db.deleteStudent(person.id)
+            elif (person.__class__.__name__ == 'Teacher'):
+                db.deleteTeacher(person.id)
+            elif (person.__class__.__name__ == 'Assistant'):
+                db.deleteAssistant(person.id)
         if person in data:
             data.remove(person)
             self.refresh_display()
