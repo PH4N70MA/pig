@@ -1,5 +1,5 @@
 host = "localhost"
 user = "postgres"
-password = "ph4n70mhackprofile"
+password = "test123"
 db_name = "postgres"
 port = 24401
