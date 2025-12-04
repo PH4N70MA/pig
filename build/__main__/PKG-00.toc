@@ -1,0 +1,87 @@
+('C:\\Users\\alexg\\OneDrive - Technical University of Moldova\\Anul '
+ '4\\Semestrul 1\\PIG\\code_zone\\build\\__main__\\__main__.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True,
+  'SYMLINK': False},
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'C:\\Users\\alexg\\OneDrive - Technical University of Moldova\\Anul '
+   '4\\Semestrul 1\\PIG\\code_zone\\build\\__main__\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Users\\alexg\\OneDrive - Technical University of Moldova\\Anul '
+   '4\\Semestrul 1\\PIG\\code_zone\\build\\__main__\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\Users\\alexg\\OneDrive - Technical University of Moldova\\Anul '
+   '4\\Semestrul '
+   '1\\PIG\\code_zone\\build\\__main__\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\Users\\alexg\\OneDrive - Technical University of Moldova\\Anul '
+   '4\\Semestrul '
+   '1\\PIG\\code_zone\\build\\__main__\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\Users\\alexg\\OneDrive - Technical University of Moldova\\Anul '
+   '4\\Semestrul '
+   '1\\PIG\\code_zone\\build\\__main__\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\Users\\alexg\\OneDrive - Technical University of Moldova\\Anul '
+   '4\\Semestrul '
+   '1\\PIG\\code_zone\\build\\__main__\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\Users\\alexg\\OneDrive - Technical University of Moldova\\Anul '
+   '4\\Semestrul '
+   '1\\PIG\\code_zone\\pig_lab\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Users\\alexg\\OneDrive - Technical University of Moldova\\Anul '
+   '4\\Semestrul '
+   '1\\PIG\\code_zone\\pig_lab\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'C:\\Users\\alexg\\OneDrive - Technical University of Moldova\\Anul '
+   '4\\Semestrul '
+   '1\\PIG\\code_zone\\pig_lab\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'C:\\Users\\alexg\\OneDrive - Technical University of Moldova\\Anul '
+   '4\\Semestrul '
+   '1\\PIG\\code_zone\\pig_lab\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('pyi_rth_setuptools',
+   'C:\\Users\\alexg\\OneDrive - Technical University of Moldova\\Anul '
+   '4\\Semestrul '
+   '1\\PIG\\code_zone\\pig_lab\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_setuptools.py',
+   'PYSOURCE'),
+  ('pyi_rth_mplconfig',
+   'C:\\Users\\alexg\\OneDrive - Technical University of Moldova\\Anul '
+   '4\\Semestrul '
+   '1\\PIG\\code_zone\\pig_lab\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_mplconfig.py',
+   'PYSOURCE'),
+  ('pyi_rth__tkinter',
+   'C:\\Users\\alexg\\OneDrive - Technical University of Moldova\\Anul '
+   '4\\Semestrul '
+   '1\\PIG\\code_zone\\pig_lab\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth__tkinter.py',
+   'PYSOURCE'),
+  ('__main__',
+   'C:\\Users\\alexg\\OneDrive - Technical University of Moldova\\Anul '
+   '4\\Semestrul 1\\PIG\\code_zone\\__main__.py',
+   'PYSOURCE')],
+ 'python313.dll',
+ True,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)
