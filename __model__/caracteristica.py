@@ -17,11 +17,7 @@ class Subject:
         self.subject = subject
 
 class Departament:
-    ALLOWED_DEPARTMENTS = ["Human Resources", "Finance", "Engineering", "Marketing"]
-
     def __init__(self, department):
-        if department not in self.ALLOWED_DEPARTMENTS:
-            raise ValueError(f"Invalid department. Must be one of: {', '.join(self.ALLOWED_DEPARTMENTS)}")
         self.department = department
 
 class Employee(Person, Departament):  # Employee inherits from Person

@@ -1,8 +1,6 @@
-from __model__.data import read_json_students, read_json_teachers, read_json_assistants
-from __model__.data import save_json_students, save_json_teachers, save_json_assistants
 from __model__.humans import Student, Teacher, Assistant
-import random
-
+from __model__.db.db_control import DBController
+from config import host, user, password, db_name, port
 
 class DataPresenter:
     
@@ -45,14 +43,6 @@ class DataPresenter:
             
     def get_data(self):
         return self.data
-        
-    def generate_id(self, prefix, id_range):
-        existing_ids = [obj.id for obj in self.data]
-        while True:
-            new_id = f"{prefix}{random.randint(*id_range)}"
-            if new_id not in existing_ids:
-                return new_id
-
 
 class StudentPresenter(DataPresenter):
     
@@ -61,17 +51,14 @@ class StudentPresenter(DataPresenter):
         self.load_data()
         
     def load_data(self):
-        """Load students from JSON file"""
-        try:
-            self.data = read_json_students()
-        except FileNotFoundError:
+
+        with DBController(host, user, password, db_name, port) as db:
             self.data = []
-            
-    def save_data(self):
-        """Save students to JSON file"""
-        save_json_students(self.data)
-        if self.view:
-            self.view.show_message("Students saved!")
+            students = db.showStudents()
+            for student in students:
+                # Assuming the order of columns is (id, name, grade, speciality)
+                _, name, grade, speciality = student
+                self.data.append(Student(name, _, grade, speciality))
             
     def add_item(self, name, grade, speciality):
         """Add new student"""
@@ -84,15 +71,20 @@ class StudentPresenter(DataPresenter):
             if self.view:
                 self.view.show_message("Error: Please select a valid speciality")
             return False
-            
-        student_id = self.generate_id("STU", (1000, 9999))
-        new_student = Student(name, student_id, grade, speciality)
-        self.data.append(new_student)
+        
+        with DBController(host, user, password, db_name, port) as db:
+            db.addStudent(name, grade, speciality)
+            # Re-fetch students and take the last one's id (assumes showStudents returns rows ordered by id)
+            students = db.showStudents()
+            student_id = students[-1][0] if students else None
+            new_student = Student(name, student_id, grade, speciality)
+            self.data.append(new_student)
+
         
         if self.view:
             self.view.refresh_display()
             self.view.clear_fields()
-            self.view.show_message(f"Student added with ID: {student_id}")
+            self.view.show_message(f"Student added with ID: {new_student.id}")
         return True
         
     def get_sort_keys(self):
@@ -112,17 +104,13 @@ class TeacherPresenter(DataPresenter):
         self.load_data()
         
     def load_data(self):
-        """Load teachers from JSON file"""
-        try:
-            self.data = read_json_teachers()
-        except FileNotFoundError:
+        with DBController(host, user, password, db_name, port) as db:
             self.data = []
-            
-    def save_data(self):
-        """Save teachers to JSON file"""
-        save_json_teachers(self.data)
-        if self.view:
-            self.view.show_message("Teachers saved!")
+            teachers = db.showTeachers()
+            for teacher in teachers:
+                # Assuming the order of columns is (id, name, salary, department, subject)
+                _, name, salary, department, subject = teacher
+                self.data.append(Teacher(name, _, salary, department, subject))
             
     def add_item(self, name, salary, department, subject):
         """Add new teacher"""
@@ -136,9 +124,11 @@ class TeacherPresenter(DataPresenter):
                 self.view.show_message("Error: Please select valid department and subject")
             return False
             
-        teacher_id = self.generate_id("TCH", (100, 999))
-        new_teacher = Teacher(name, teacher_id, salary, department, subject)
-        self.data.append(new_teacher)
+        with DBController(host, user, password, db_name, port) as db:
+            db.addTeacher(name, salary, department, subject)
+            teacher_id = db.showTeachers()[-1][0]  # Get the last added teacher's ID
+            new_teacher = Teacher(name, teacher_id, salary, department, subject)
+            self.data.append(new_teacher)
         
         if self.view:
             self.view.refresh_display()
@@ -167,17 +157,13 @@ class AssistantPresenter(DataPresenter):
         self.load_data()
         
     def load_data(self):
-        """Load assistants from JSON file"""
-        try:
-            self.data = read_json_assistants()
-        except FileNotFoundError:
+        with DBController(host, user, password, db_name, port) as db:
             self.data = []
-            
-    def save_data(self):
-        """Save assistants to JSON file"""
-        save_json_assistants(self.data)
-        if self.view:
-            self.view.show_message("Assistants saved!")
+            assistants = db.showAssistants()
+            for assistant in assistants:
+                # Assuming the order of columns is (id, name, department, salary)
+                _, name, department, salary = assistant
+                self.data.append(Assistant(name, _, salary, department))
             
     def add_item(self, name, salary, department):
         """Add new assistant"""
@@ -191,9 +177,11 @@ class AssistantPresenter(DataPresenter):
                 self.view.show_message("Error: Please select a valid department")
             return False
             
-        assistant_id = self.generate_id("AST", (100, 999))
-        new_assistant = Assistant(name, assistant_id, salary, department)
-        self.data.append(new_assistant)
+        with DBController(host, user, password, db_name, port) as db:
+            db.addAssistant(name, department, salary)
+            assistant_id = db.showAssistants()[-1][0]  # Get the last added assistant's ID
+            new_assistant = Assistant(name, assistant_id, salary, department)
+            self.data.append(new_assistant)
         
         if self.view:
             self.view.refresh_display()

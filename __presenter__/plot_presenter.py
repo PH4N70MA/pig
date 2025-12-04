@@ -1,7 +1,11 @@
-from __model__ import plot_data as model_data
+from __model__.db.db_control import DBController
+from config import host, user, password, db_name, port
+
 import matplotlib
 matplotlib.use('Agg')
 from matplotlib.figure import Figure
+
+
 class PlotPresenter:
 
     def __init__(self):
@@ -17,7 +21,8 @@ class PlotPresenter:
 
 
         if plot_type == 'students_by_speciality':
-            counts = model_data.get_students_by_speciality()
+            with DBController(host, user, password, db_name, port) as db:
+                counts = dict(db.getStudentSpecialities())
             labels = list(counts.keys())
             values = [counts[k] for k in labels]
             if sum(values) == 0:
@@ -28,7 +33,8 @@ class PlotPresenter:
                 ax.axis('equal')
 
         elif plot_type == 'teachers_by_department':
-            counts = model_data.get_teachers_count_by_subject()
+            with DBController(host, user, password, db_name, port) as db:
+                counts = dict(db.getTeacherDepartments())
             labels = list(counts.keys())
             values = [counts[k] for k in labels]
             if sum(values) == 0:
@@ -39,7 +45,8 @@ class PlotPresenter:
                 ax.axis('equal')
 
         elif plot_type == 'assistants_by_department':
-            counts = model_data.get_assistants_count_by_department()
+            with DBController(host, user, password, db_name, port) as db:
+                counts = dict(db.getAssistantDepartments())
             labels = list(counts.keys())
             values = [counts[k] for k in labels]
             if sum(values) == 0:
@@ -50,7 +57,8 @@ class PlotPresenter:
                 ax.axis('equal')
 
         elif plot_type == 'students_grade_distribution':
-            counts = model_data.get_students_grade_distribution()
+            with DBController(host, user, password, db_name, port) as db:
+                counts = dict(db.getStudentAgesRepartition())
             labels = list(counts.keys())
             values = [counts[k] for k in labels]
             if sum(values) == 0:
@@ -61,7 +69,8 @@ class PlotPresenter:
                 ax.axis('equal')
 
         elif plot_type == 'teachers_avg_salary_by_department':
-            avg = model_data.get_teachers_avg_salary_by_department()
+            with DBController(host, user, password, db_name, port) as db:
+                avg = dict(db.getTeacherSalariesAVGByDepartment())
             labels = list(avg.keys())
             values = [avg[k] for k in labels]
             ax.bar(labels, values, color='tab:orange')
@@ -70,7 +79,8 @@ class PlotPresenter:
             ax.set_xticklabels(labels, rotation=30, ha='right')
 
         elif plot_type == 'assistants_avg_salary_by_department':
-            avg = model_data.get_assistants_avg_salary_by_department()
+            with DBController(host, user, password, db_name, port) as db:
+                avg = dict(db.getAssistantSalariesAVGByDepartment())
             labels = list(avg.keys())
             values = [avg[k] for k in labels]
             ax.bar(labels, values, color='tab:purple')
@@ -79,7 +89,8 @@ class PlotPresenter:
             ax.set_xticklabels(labels, rotation=30, ha='right')
 
         elif plot_type == 'teachers_count_by_subject':
-            counts = model_data.get_teachers_count_by_subject()
+            with DBController(host, user, password, db_name, port) as db:
+                counts = dict(db.getTeacherSubjects())
             labels = list(counts.keys())
             values = [counts[k] for k in labels]
             if sum(values) == 0:
